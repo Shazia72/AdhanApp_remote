@@ -27,7 +27,7 @@ struct ContentView: View {
     @State var currentDate = Date()
     var body: some View {
         VStack (spacing: 40){
-            Button("Play Adhan mp3"){
+            Button("Play Adhan"){
                 SoundManager.instance.playAdhan()
             }
             Text("\(getTime(date: currentDate))")
